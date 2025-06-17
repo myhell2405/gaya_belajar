@@ -12,22 +12,6 @@ Proyek ini bertujuan untuk menganalisis hasil asesmen gaya belajar siswa MTsN 1 
 
 ---
 
-## 📁 Struktur Folder
-
-gaya_belajar/
-├── data/
-│ ├── data_mentah.xlsx # File kuisioner awal dari Google Form
-│ └── hasil_analisis_gaya_belajar.xlsx # Hasil analisis akhir
-├── grafik/
-│ ├── pie_gaya_belajar.png # Pie chart gaya belajar
-│ └── bar_gaya_belajar.png # Bar chart gaya belajar
-├── notebook/
-│ └── analisis_gaya_belajar.ipynb # Notebook Jupyter utama
-├── README.md # Dokumentasi proyek ini
-
-
----
-
 ## ⚙️ Teknologi yang Digunakan
 
 - Python 3.10.12
