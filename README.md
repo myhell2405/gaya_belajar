@@ -58,6 +58,6 @@ Proyek ini bertujuan untuk menganalisis hasil asesmen gaya belajar siswa MTsN 1 
 
 ## 👤 Penulis
 
-myel  
+helmy akrim  
 Mahasiswa Sistem Informasi  
   
