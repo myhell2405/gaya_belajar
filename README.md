@@ -1,63 +1,66 @@
-# 🎓 Analisis Gaya Belajar Siswa MTsN 1 Kota Padang Tahun Pelajaran 2024/2025
+﻿# 🎓 Analisis Gaya Belajar Siswa MTsN 1 Kota Padang TP 2024/2025
 
-Proyek ini bertujuan untuk menganalisis hasil asesmen gaya belajar siswa MTsN 1 Kota Padang berdasarkan kuisioner non-kognitif. Setiap jawaban dikategorikan ke dalam tiga gaya belajar: Visual, Auditori, dan Kinestetik.
+Proyek ini bertujuan untuk menganalisis hasil asesmen gaya belajar siswa MTsN 1 Kota Padang berdasarkan kuisioner non-kognitif. Setiap jawaban dikategorikan ke dalam tiga tipe gaya belajar: **Visual**, **Auditori**, dan **Kinestetik**.
 
 ---
 
 ## 📊 Tujuan Analisis
 
-- Mengidentifikasi gaya belajar dominan masing-masing siswa
-- Menyajikan statistik jumlah siswa berdasarkan gaya belajar
-- Memberikan rekomendasi pendekatan pembelajaran yang sesuai
+- Mengidentifikasi gaya belajar dominan masing-masing siswa.
+- Menyajikan visualisasi statistik distribusi siswa berdasarkan tipe belajar.
+- Memberikan rekomendasi pendekatan pembelajaran yang adaptif bagi tenaga pendidik.
 
 ---
 
-## ⚙️ Teknologi yang Digunakan
+## ⚙️ Teknologi & Library
 
-- Python 3.10.12
-- Pandas
-- Matplotlib
-- Jupyter Notebook
-
----
-
-## 📌 Langkah Analisis
-
-1. **Import Data Excel**
-2. **Bersihkan data**:
-   - Ambil hanya huruf pertama dari setiap jawaban
-   - Pastikan jawaban adalah A, B, atau C
-3. **Konversi Nilai:**
-   - A → Visual
-   - B → Auditori
-   - C → Kinestetik
-4. **Hitung jumlah tiap kategori per siswa**
-5. **Tentukan gaya belajar dominan**
-6. **Visualisasikan hasil**
-7. **Ekspor hasil ke Excel dan gambar grafik**
+- **Python 3.10+**
+- **Pandas** (Data manipulation & processing)
+- **Matplotlib** (Data visualization)
+- **Jupyter Notebook** (Interactive analysis environment)
 
 ---
 
-## 🧠 Interpretasi
+## 📁 Struktur Berkas
 
-- **Visual** → Belajar lebih baik dengan gambar, warna, diagram
-- **Auditori** → Belajar lebih efektif dengan mendengar dan berdiskusi
-- **Kinestetik** → Belajar optimal melalui praktik, gerak, simulasi
-
----
-
-## 📝 Catatan
-
-- Data bersumber dari kuisioner Google Form.
-- Proyek ini dapat dikembangkan lebih lanjut untuk:
-  - Analisis per kelas
-  - Rekomendasi pembelajaran adaptif
-  - Dashboard interaktif
+`	ext
+gaya_belajar/
+├── data_belajar.xlsx                # Data mentah kuesioner siswa
+├── analisis_gaya_belajar.ipynb      # Notebook langkah pembersihan & analisis data
+├── hasil_analisis_gaya_belajar.xlsx # Hasil pengelompokan gaya belajar siswa
+├── grafik_bar_gaya_belajar.png      # Visualisasi diagram batang
+├── grafik_pie_gaya_belajar.png      # Visualisasi diagram lingkaran
+├── .gitignore                       # File pengabaian cache git
+└── README.md                        # Dokumentasi proyek
+`
 
 ---
 
-## 👤 Penulis
+## 📌 Metodologi Analisis
 
-helmy akrim  
-Mahasiswa Sistem Informasi  
-  
+1. **Import Data**: Membaca data jawaban kuesioner dari berkas Excel.
+2. **Data Cleaning**:
+   - Ekstraksi opsi pilihan pertama dari setiap respons.
+   - Validasi format respons (A, B, atau C).
+3. **Kategorisasi**:
+   - **Opsi A** → Visual
+   - **Opsi B** → Auditori
+   - **Opsi C** → Kinestetik
+4. **Agregasi**: Menghitung frekuensi preferensi per siswa dan menentukan gaya belajar dominan.
+5. **Visualisasi**: Membangun visualisasi perbandingan (Bar Chart & Pie Chart).
+6. **Ekspor**: Menyimpan rekapitulasi ke format Excel siap pakai.
+
+---
+
+## 🧠 Interpretasi Karakteristik
+
+- **Visual**: Belajar optimal melalui stimulus gambar, diagram alir, dan representasi visual.
+- **Auditori**: Belajar lebih efektif melalui instruksi verbal, mendengarkan, dan diskusi.
+- **Kinestetik**: Belajar maksimal dengan keterlibatan fisik, simulasi, dan praktik langsung.
+
+---
+
+## 👤 Pengembang
+
+**Helmy Akrim, S.Kom**  
+*Sarjana Sistem Informasi \| Data & Systems Analyst*
